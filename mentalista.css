@@ -1,0 +1,92 @@
+:root{
+    --color-first:#40c4ff;
+    --color-button:#00d8ff;
+    --color-dark:#292a3f;
+    --color-light:#78f5fd;
+  }
+  
+  body {
+      font-family: 'New Tegomin', serif;
+      min-height: 600px;
+      background-image: url('https://cdn.suwalls.com/wallpapers/3d/glowing-sphere-in-a-wall-26292-1920x1200.jpg');
+      background-size: 100%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      color: var(--color-first);
+      text-align: center;
+    }
+    
+    .definirParametros, .sorteio {
+      text-align: center;
+      padding: 50px;
+      max-height: 100vh;
+      width:400px;
+      backdrop-filter: opacity(.9) blur(50px) brightness(10%);
+      margin: 10px 5%;
+    } 
+    
+    .page-title {
+      color: var(--color-first);
+      margin: 0 0 5px;
+    }
+    
+    .page-subtitle {
+      color: var(--color-first);
+      margin-top: 5px;
+    }
+  
+    .page-content{
+      color:var(--color-first);
+      font-size: 18px;
+      font-family:inherit;
+      margin-bottom:20px;
+    }
+  
+  
+  button{
+    background-color:var(--color-button);
+    width:310px;
+    height:50px;
+    font-size:20px;
+    border:none;
+    box-shadow:5px 5px var(--color-dark);
+    margin:10px;
+    cursor:pointer;
+    border-radius: 5px;
+    font-family:inherit;
+    transition: transform 100ms ease-in-out;
+    
+  }
+
+  button:hover{
+    transform: scale(1.05);
+  }
+  
+  input{
+    font-size:20px;
+    font-family:inherit;
+    width:300px;
+    height:50px;
+    background-color:var(--color-light);
+    border:none;
+    border-radius: 5px;
+    text-align:center;
+  }
+  
+    .page-logo {
+      width: 150px;
+      margin-top:50px;
+    }
+    
+    .alura-logo {
+      width: 40px;
+      position: absolute;
+      top: 10px;
+      right:10px;
+    }
+  
+    @media (max-height: 500px) {
+      body {
+        min-height:800px;
+      }
+    }
