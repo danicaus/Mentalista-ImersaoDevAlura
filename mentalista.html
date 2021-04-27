@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Imersão Dev - Aula 03</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap">
+    <link rel="stylesheet" href="mentalista.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1 class="page-title">Mentalista</h1>
+    <h2 class="page-subtitle">Você consegue acertar o número sorteado?</h2>
+    <section class="definirParametros" style="display: block">
+        <h3 class="page-content">Primeiro, defina o intervalo de valores que devo sortear e o máximo de vezes que você poderá chutar.</h3>     
+        <p><input class="obterParametros" id="numeroMinimo" min="0" placeholder="Valor mínimo" type="number"></p>
+        <p><input class="obterParametros" id="numeroMaximo" min="0" placeholder="Valor máximo" type="number"></p>
+        <p><input class="obterParametros" id="maxTentativas" min="0" placeholder="Máximo de tentativas" type="number"></p>
+
+        <p><button id="botaoSortear" onclick = sorteio()>Sortear</button></p>
+    </section>
+    <section class="sorteio" style="display: none">
+        <h3 class="page-content">Ok, número escolhido. Tente acertar qual!</h3> 
+        <p><input class="obterTentativa" id="tentativa" placeholder='Tentativa' type="number"></p>
+        <p><button id="tentar" onclick = jogo()>Chutar</button></p>
+        <p><button id="reiniciar" onclick = restart() style="display: none">Tentar Novamente</button></p>
+        <p><output class="resposta" id='resposta'></output></p>
+    </section>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg"
+        class="page-logo"
+        alt="">  
+    </div>    
+  
+     
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <script src="mentalista.js"></script>
+</body>
+</html> 
