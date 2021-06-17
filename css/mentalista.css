@@ -7,13 +7,17 @@
   
   body {
       font-family: 'New Tegomin', serif;
-      min-height: 600px;
+      height: 100vh;
       background-image: url('https://cdn.suwalls.com/wallpapers/3d/glowing-sphere-in-a-wall-26292-1920x1200.jpg');
-      background-size: 100%;
-      background-position: center bottom;
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
       color: var(--color-first);
       text-align: center;
+
+      box-sizing: border-box;
+
+      margin: 0;
     }
     
     .definirParametros, .sorteio {
@@ -85,8 +89,8 @@
       right:10px;
     }
   
-    @media (max-height: 500px) {
-      body {
-        min-height:800px;
-      }
-    }
+@media (max-height: 500px) {
+  body {
+    min-height:800px;
+  }
+}
